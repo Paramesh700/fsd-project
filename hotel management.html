@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Management System</title>
+<style>
+body{
+    font-family: sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:left;
+    padding:20px;
+}
+nav{
+    background:#34495e;
+    padding:10px;
+    text-align:right;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+section{
+    padding:20px;
+}
+.rooms{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.room{
+    background:white;
+    padding:15px;
+    border-radius:5px;
+    width:250px;
+    box-shadow:0 0 5px gray;
+}
+form{
+    background:white;
+    padding:20px;
+    max-width:400px;
+    border-radius:5px;
+    box-shadow:0 0 5px gray;
+}
+input, select{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+}
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:10px;
+    width:100%;
+    cursor:pointer;
+}
+footer{
+    background:#ebf3ee;
+    color:sandybrown;
+    text-align:right;
+    padding:10px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Paramesh Hotel</h1>
+<p>Welcome to our Hotel Management System</p>
+</header>
+<nav>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+<section id="rooms">
+<h2>Our Rooms</h2>
+<div class="rooms">
+<div class="room">
+<h3>Single Room</h3>
+<p>Price: $50 per night</p>
+<p>1 Bed, Free WiFi</p>
+</div>
+<div class="room">
+<h3>Double Room</h3>
+<p>Price: $90 per night</p>
+<p>2 Beds, Free WiFi, TV</p>
+</div>
+<div class="room">
+<h3>Suite</h3>
+<p>Price: $150 per night</p>
+<p>Luxury Suite, AC, TV, WiFi</p>
+</div>
+</div>
+</section>
+<section id="booking">
+<h2>Room Booking</h2>
+<form>
+<label>Name</label>
+<input type="text" required>
+<label>Email</label>
+<input type="email" required>
+<label>Room Type</label>
+<select>
+<option>Deluxe Room</option>
+<option>Premium Room</option>
+<option>Luxury Suite</option>
+</select>
+<label>Check-in Date</label>
+<input type="date">
+<label>Check-out Date</label>
+<input type="date">
+<button type="submit">Book Now</button>
+</form>
+</section>
+<section id="services">
+<h2>Hotel Services</h2>
+<ul>
+<li>Free WiFi</li>
+<li>24/7 Room Service</li>
+<li>Swimming Pool</li>
+<li>Restaurant</li>
+<li>Airport Pickup</li>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: parameshwarareddy@gamil.com</p>
+<p>Phone: +91 1234567890</p>
+</section>
+<footer>
+<p>Paramesh Hotel Management System</p>
+</footer>
+</body>
+</html>
